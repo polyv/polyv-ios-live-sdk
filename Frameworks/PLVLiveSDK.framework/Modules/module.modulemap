@@ -1,0 +1,6 @@
+framework module PLVLiveSDK {
+  umbrella header "PLVLiveSDK.h"
+
+  export *
+  module * { export * }
+}

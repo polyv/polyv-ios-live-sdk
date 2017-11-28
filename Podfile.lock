@@ -1,0 +1,15 @@
+PODS:
+  - Socket.IO-Client-Swift (12.1.3):
+    - Starscream (~> 2.1.1)
+  - Starscream (2.1.1)
+
+DEPENDENCIES:
+  - Socket.IO-Client-Swift (~> 12.1.1)
+
+SPEC CHECKSUMS:
+  Socket.IO-Client-Swift: 2d3838d0e7bc105626872081fb6a23141145e8f8
+  Starscream: 142bd8ef24592d985daee9fa48c936070b85b15f
+
+PODFILE CHECKSUM: b6c97e32a0567b08c769a7484351ffd03ae3403c
+
+COCOAPODS: 1.2.0
