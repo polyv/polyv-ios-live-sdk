@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5268856AA9CE2D89DD19084D /* Pods_LiveSDK_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077E47FCB4E15CBBB39E4B59 /* Pods_LiveSDK_iOS.framework */; };
 		6737C7331FCD3DD9003BF21A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6737C7321FCD3DD9003BF21A /* AppDelegate.m */; };
 		6737C7361FCD3DD9003BF21A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6737C7351FCD3DD9003BF21A /* ViewController.m */; };
 		6737C7391FCD3DD9003BF21A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6737C7371FCD3DD9003BF21A /* Main.storyboard */; };
 		6737C73B1FCD3DD9003BF21A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6737C73A1FCD3DD9003BF21A /* Assets.xcassets */; };
 		6737C73E1FCD3DD9003BF21A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6737C73C1FCD3DD9003BF21A /* LaunchScreen.storyboard */; };
 		6737C7411FCD3DD9003BF21A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6737C7401FCD3DD9003BF21A /* main.m */; };
+		6737C7491FCD4F89003BF21A /* PLVLiveSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6737C7481FCD4F89003BF21A /* PLVLiveSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		077E47FCB4E15CBBB39E4B59 /* Pods_LiveSDK_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveSDK_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6737C72E1FCD3DD9003BF21A /* LiveSDK-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LiveSDK-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6737C7311FCD3DD9003BF21A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6737C7321FCD3DD9003BF21A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +29,9 @@
 		6737C73D1FCD3DD9003BF21A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6737C73F1FCD3DD9003BF21A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6737C7401FCD3DD9003BF21A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6737C7481FCD4F89003BF21A /* PLVLiveSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PLVLiveSDK.framework; sourceTree = "<group>"; };
+		95D932CE18BF03E363DE3C71 /* Pods-LiveSDK-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveSDK-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveSDK-iOS/Pods-LiveSDK-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		F99CF2AC7CEA450E2313C2E7 /* Pods-LiveSDK-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveSDK-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveSDK-iOS/Pods-LiveSDK-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6737C7491FCD4F89003BF21A /* PLVLiveSDK.framework in Frameworks */,
+				5268856AA9CE2D89DD19084D /* Pods_LiveSDK_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		454116D175D539B0EC36EC77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F99CF2AC7CEA450E2313C2E7 /* Pods-LiveSDK-iOS.debug.xcconfig */,
+				95D932CE18BF03E363DE3C71 /* Pods-LiveSDK-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6737C7251FCD3DD9003BF21A = {
 			isa = PBXGroup;
 			children = (
+				6737C7471FCD4F89003BF21A /* Frameworks */,
 				6737C7301FCD3DD9003BF21A /* LiveSDK-iOS */,
 				6737C72F1FCD3DD9003BF21A /* Products */,
+				454116D175D539B0EC36EC77 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +90,15 @@
 			path = "LiveSDK-iOS";
 			sourceTree = "<group>";
 		};
+		6737C7471FCD4F89003BF21A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6737C7481FCD4F89003BF21A /* PLVLiveSDK.framework */,
+				077E47FCB4E15CBBB39E4B59 /* Pods_LiveSDK_iOS.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6737C7441FCD3DD9003BF21A /* Build configuration list for PBXNativeTarget "LiveSDK-iOS" */;
 			buildPhases = (
+				BC0F01FDEF75AB70D2A60A4A /* [CP] Check Pods Manifest.lock */,
 				6737C72A1FCD3DD9003BF21A /* Sources */,
 				6737C72B1FCD3DD9003BF21A /* Frameworks */,
 				6737C72C1FCD3DD9003BF21A /* Resources */,
+				600E8B631FF056DE44A1000C /* [CP] Embed Pods Frameworks */,
+				1EC82369C071BDC72851CEB0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,6 +167,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EC82369C071BDC72851CEB0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveSDK-iOS/Pods-LiveSDK-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		600E8B631FF056DE44A1000C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveSDK-iOS/Pods-LiveSDK-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC0F01FDEF75AB70D2A60A4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6737C72A1FCD3DD9003BF21A /* Sources */ = {
@@ -276,10 +355,17 @@
 		};
 		6737C7451FCD3DD9003BF21A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F99CF2AC7CEA450E2313C2E7 /* Pods-LiveSDK-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = "LiveSDK-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.polyv.LiveSDK-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,10 +375,17 @@
 		};
 		6737C7461FCD3DD9003BF21A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95D932CE18BF03E363DE3C71 /* Pods-LiveSDK-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = "LiveSDK-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.polyv.LiveSDK-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
