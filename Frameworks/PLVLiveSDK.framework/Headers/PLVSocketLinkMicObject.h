@@ -11,12 +11,17 @@
 
 /// 连麦事件
 typedef NS_ENUM(NSUInteger, PLVSocketLinkMicEventType) {
-    PLVSocketLinkMicEventType_OPEN_MICROPHONE = 0,  // 老师开启关闭连麦
+    /// 老师开启关闭连麦
+    PLVSocketLinkMicEventType_OPEN_MICROPHONE = 0,
     
-    PLVSocketLinkMicEventType_JOIN_REQUEST,          // 举手事件
-    PLVSocketLinkMicEventType_JOIN_RESPONSE,         // 老师同意通话事件
-    PLVSocketLinkMicEventType_JOIN_SUCCESS,          // 加入声网成功事件
-    PLVSocketLinkMicEventType_JOIN_LEAVE,            // 结束发言事件
+    /// 举手事件
+    PLVSocketLinkMicEventType_JOIN_REQUEST,
+    /// 老师同意通话事件
+    PLVSocketLinkMicEventType_JOIN_RESPONSE,
+    /// 加入声网成功事件
+    PLVSocketLinkMicEventType_JOIN_SUCCESS,
+    /// 结束发言事件
+    PLVSocketLinkMicEventType_JOIN_LEAVE,
 };
 
 /**

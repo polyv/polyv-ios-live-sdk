@@ -10,10 +10,14 @@
 
 /// 日志等级
 typedef NS_ENUM(NSUInteger, PLVLiveLogLevel) {
-    k_PLV_LIVE_LOG_NULL         = 0,        // 无 LOG 输出
-    k_PLV_LIVE_LOG_ERROR        = 1,        // ERROR 等级
-    k_PLV_LIVE_LOG_INFO         = 2,        // INFO 等级
-    k_PLV_LIVE_LOG_DEBUG        = 3,        // DEBUG 等级
+    /// 无 LOG 输出
+    k_PLV_LIVE_LOG_NULL         = 0,
+    /// ERROR 等级
+    k_PLV_LIVE_LOG_ERROR        = 1,
+    /// INFO 等级
+    k_PLV_LIVE_LOG_INFO         = 2,
+    /// DEBUG 等级
+    k_PLV_LIVE_LOG_DEBUG        = 3,
 };
 
 /**
@@ -21,9 +25,12 @@ typedef NS_ENUM(NSUInteger, PLVLiveLogLevel) {
  */
 @interface PLVLiveConfig : NSObject
 
+/// polyv 用户参数
 @property (nonatomic, strong, readonly) NSString *appId;
+/// polyv 用户参数
 @property (nonatomic, strong, readonly) NSString *appSecret;
 
+/// 播放器id
 @property (nonatomic, strong, readonly) NSString *playerId;
 
 /**

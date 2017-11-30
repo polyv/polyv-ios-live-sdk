@@ -13,11 +13,16 @@
 
 /// socketIO 连接状态
 typedef NS_ENUM(NSInteger, PLVSocketIOState) {
-    PLVSocketIOStatusNotConnected = 0,          // SocketIO 未连接
-    PLVSocketIOStateDisconnected = 1,           // SocketIO 失去连接
-    PLVSocketIOStateConnecting = 2,             // SocketIO 连接中
-    PLVSocketIOStateConnected = 3,              // SocketIO 连接成功
-    PLVSocketIOStateConnectError = 4,           // SocketIO 连接出错
+    /// SocketIO 未连接
+    PLVSocketIOStatusNotConnected = 0,
+    /// SocketIO 失去连接
+    PLVSocketIOStateDisconnected = 1,
+    /// SocketIO 连接中
+    PLVSocketIOStateConnecting = 2,
+    /// SocketIO 连接成功
+    PLVSocketIOStateConnected = 3,
+    /// SocketIO 连接出错
+    PLVSocketIOStateConnectError = 4,
 };
 
 @protocol PLVSocketIODelegate;
@@ -27,11 +32,16 @@ typedef NS_ENUM(NSInteger, PLVSocketIOState) {
  */
 @interface PLVSocketIO : NSObject
 
+/// SocketIO 代理人
 @property (nonatomic, weak) id <PLVSocketIODelegate> delegate;
+/// Socket id
 @property (nonatomic, strong, readonly) NSString *socketId;
+/// 房间号/频道号
 @property (nonatomic, assign, readonly) NSUInteger channelId;
+/// 用户Id(登录时由客户端生成)
 @property (nonatomic, strong, readonly) NSString *userId;
 
+/// socketIO 连接状态
 @property (nonatomic, assign, readonly) PLVSocketIOState socketIOState;
 
 /**
@@ -91,30 +101,33 @@ typedef NS_ENUM(NSInteger, PLVSocketIOState) {
 
 @end
 
+/**
+ SocketIO 代理消息
+ */
 @protocol PLVSocketIODelegate <NSObject>
 
 @required
-/// SocketIO 连接服务器成功
+/** SocketIO 连接服务器成功*/
 - (void)socketIO:(PLVSocketIO *)socketIO didConnectWithInfo:(NSString *)info;
 
 @optional
-/// SocketIO 收到聊天室消息
+/** SocketIO 收到聊天室消息*/
 - (void)socketIO:(PLVSocketIO *)socketIO didReceiveChatMessage:(PLVSocketChatRoomObject *)chatObject;
 
-/// SocketIO 收到连麦消息
+/** SocketIO 收到连麦消息*/
 - (void)socketIO:(PLVSocketIO *)socketIO didReceiveLinkMicMessage:(PLVSocketLinkMicObject *)linkMicObject;
-/// TODO: SocketIO 收到PPT消息
+/// TODO: SocketIO 收到云课堂消息
 
-/// SocketIO 和服务器失去连接
+/** SocketIO 和服务器失去连接*/
 - (void)socketIO:(PLVSocketIO *)socketIO didDisconnectWithInfo:(NSString *)info;
 
-/// SocketIO 连接服务器出错
+/** SocketIO 连接服务器出错*/
 - (void)socketIO:(PLVSocketIO *)socketIO connectOnErrorWithInfo:(NSString *)info;
 
-/// SocketIO 重新连接服务器
+/** SocketIO 重新连接服务器*/
 - (void)socketIO:(PLVSocketIO *)socketIO reconnectWithInfo:(NSString *)info;
 
-/// 本地出错信息回调
+/** 本地出错信息回调*/
 - (void)socketIO:(PLVSocketIO *)socketIO localError:(NSString *)description;
 
 @end

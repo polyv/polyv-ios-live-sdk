@@ -13,32 +13,46 @@
 
 /// SDK 通用错误码
 typedef NS_ENUM(NSInteger, PLVLiveErrorCode) {
-    PLVLiveErrorCodeParamInvalid                = -10000,       // 参数无效/非法
+    /// 参数无效/非法
+    PLVLiveErrorCodeParamInvalid                = -10000,
     
-    PLVLiveErrorCodeNetworkError                = -10010,       // 网络请求失败
-    PLVLiveErrorCodeResponseCodeNot200          = -10011,       // 服务器响应非 200
-    PLVLiveErrorCodeResponseCode403             = -10012,       // 服务器响应 403
+    /// 网络请求失败
+    PLVLiveErrorCodeNetworkError                = -10010,
+    /// 服务器响应非 200
+    PLVLiveErrorCodeResponseCodeNot200          = -10011,
+    /// 服务器响应 403
+    PLVLiveErrorCodeResponseCode403             = -10012,
     
-    PLVLiveErrorCodeJsonDecodeFailure           = -10020,       // JSON 解析失败
-    PLVLiveErrorCodeEncodeJsonDecodeFailure     = -10021,       // 加密 JSON 解析失败
-    PLVLiveErrorCodeDecodeFailre                = -10022,       // 解密失败
+    /// JSON 解析失败
+    PLVLiveErrorCodeJsonDecodeFailure           = -10020,
+    /// 加密 JSON 解析失败
+    PLVLiveErrorCodeEncodeJsonDecodeFailure     = -10021,
+    /// 解密失败
+    PLVLiveErrorCodeDecodeFailre                = -10022,
     
-    /* 多数为服务器对参数验证不通过*/
-    PLVLiveErrorCodeLoginFailre                 = -10030,       // 登录失败(登录接口)
-    PLVLiveErrorCodeRequestFailre               = -10031,       // 请求失败
-    PLVLiveErrorCodeSettingFailre               = -10032,       // 设置失败
+    /* -- 以下多数为服务器对参数验证不通过 -- */
+    /// 登录失败(登录接口)
+    PLVLiveErrorCodeLoginFailre                 = -10030,
+    /// 请求失败
+    PLVLiveErrorCodeRequestFailre               = -10031,
+    ///  设置失败
+    PLVLiveErrorCodeSettingFailre               = -10032,
     
-    PLVLiveErrorCodeUnknown                     = -9999,        // 未知类型
+    /// 未知类型
+    PLVLiveErrorCodeUnknown                     = -9999
 };
 
-/// 返回 SDK 通用错误码对应的字符串符号
+/** 返回 SDK 通用错误码对应的字符串符号*/
 NSString *NameStringWithLiveErrorCode(PLVLiveErrorCode errorCode);
 
 /// 直播状态
 typedef NS_ENUM(NSInteger, PLVLiveStreamState) {
-    PLVLiveStreamStateUnknown               = -1,           // 直播流状态未知
-    PLVLiveStreamStateNoStream              = 0,            // 无直播流
-    PLVLiveStreamStateLive                  = 1             // 直播中
+    /// 直播流状态未知
+    PLVLiveStreamStateUnknown               = -1,
+    /// 无直播流
+    PLVLiveStreamStateNoStream              = 0,
+    /// 直播中
+    PLVLiveStreamStateLive                  = 1
 };
 
 /**
