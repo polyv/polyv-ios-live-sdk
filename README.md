@@ -184,24 +184,32 @@ SocketIO 控制
 
 ## DOCS
 
-- [PLVLiveConfig]()
+当前版本：v3.0.0
+
+- [PLVLiveConfig](http://repo.polyv.net/ios/livesdk/docs/3.0.0/Classes/PLVLiveConfig.html)
 
   ​
 
-- [PLVLiveAPI]()
+- [PLVLiveAPI](http://repo.polyv.net/ios/livesdk/docs/3.0.0/Classes/PLVLiveAPI.html)
 
-- [PLVLiveChannel]()
+- [PLVLiveChannel](http://repo.polyv.net/ios/livesdk/docs/3.0.0/Classes/PLVLiveChannel.html)
 
-- [PLVPushChannel]()
+- [PLVPushChannel](http://repo.polyv.net/ios/livesdk/docs/3.0.0/Classes/PLVPushChannel.html)
 
-- [PLVLiveReporter]()
+- [PLVLiveReporter](http://repo.polyv.net/ios/livesdk/docs/3.0.0/Classes/PLVLiveReporter.html)
 
   ​
 
 
 
 - [PLVSocketIOEventDef](https://github.com/polyv/polyv-ios-live-sdk/blob/master/Frameworks/PLVLiveSDK.framework/Headers/PLVSocketIOEventDef.h)
-- [PLVSocketIO]()
-- [PLVSocketObject]()
-- [PLVSocketChatRoomObject]()
-- [PLVSocketLinkMicObject]()
+- [PLVSocketIO](http://repo.polyv.net/ios/livesdk/docs/3.0.0/Classes/PLVSocketIO.html)
+- [PLVSocketObject](http://repo.polyv.net/ios/livesdk/docs/3.0.0/Classes/PLVSocketObject.html)
+- [PLVSocketChatRoomObject](http://repo.polyv.net/ios/livesdk/docs/3.0.0/Classes/PLVSocketChatRoomObject.html)
+- [PLVSocketLinkMicObject](http://repo.polyv.net/ios/livesdk/docs/3.0.0/Classes/PLVSocketLinkMicObject.html)
+
+
+
+历史版本
+
+ [v3.0.0](http://repo.polyv.net/ios/livesdk/docs/3.0.0/index.html)
