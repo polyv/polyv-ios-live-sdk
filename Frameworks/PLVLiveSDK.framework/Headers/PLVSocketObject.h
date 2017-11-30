@@ -8,24 +8,32 @@
 
 #import <Foundation/Foundation.h>
 
-extern NSString *const PLVSocketObjectDefaultUserNick; // 默认用户昵称
-extern NSString *const PLVSocketObjectDefaultUserPic;  // 默认用户头像
+/// 默认用户昵称
+extern NSString *const PLVSocketObjectDefaultUserNick;
+/// 默认用户头像
+extern NSString *const PLVSocketObjectDefaultUserPic;
 
-/// socketIO 事件对象类型
+/// SocketIO 事件对象类型
 typedef NS_ENUM(NSUInteger, PLVSocketObjectType) {
-    PLVSocketObjectTypeChatRoom = 0,        // 聊天室对象
-    PLVSocketObjectTypeLinkMic,             // 连麦对象
-    PLVSocketObjectTypePPT                  // PPT 对象
+    /// 聊天室对象
+    PLVSocketObjectTypeChatRoom = 0,
+    /// 连麦对象
+    PLVSocketObjectTypeLinkMic,
+    /// 云课堂对象
+    PLVSocketObjectTypePPT
 };
 
 /// SocketIO 对象用户类型
 typedef NS_ENUM(NSUInteger, PLVSocketObjectUserType) {
-    PLVSocketObjectUserTypeStudent,         // 学生（普通直播观看下用户类型）
-    PLVSocketObjectUserTypeSlice,           // 云课堂学员（PPT模式下用户类型）
-    PLVSocketObjectUserTypeTeacher,         // 教师（推流端用户类型）
+    /// 学生（普通直播观看下用户类型）
+    PLVSocketObjectUserTypeStudent,
+    /// 云课堂学员（PPT模式下用户类型）
+    PLVSocketObjectUserTypeSlice,
+    /// 教师（推流端用户类型）
+    PLVSocketObjectUserTypeTeacher
 };
 
-/// 返回 SocketIO 对象用户类型对应的字符串符号
+/** 返回 SocketIO 对象用户类型对应的字符串符号*/
 NSString *NameStringWithSocketObjectUserType(PLVSocketObjectUserType userType);
 
 /**

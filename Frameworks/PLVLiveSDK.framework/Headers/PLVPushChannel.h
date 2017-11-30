@@ -13,22 +13,35 @@
  */
 @interface PLVPushChannel : NSObject
 
-@property (nonatomic, copy, readonly) NSNumber *channelId;          // 频道号
-@property (nonatomic, copy, readonly) NSString *rtmpUrl;            // 推流地址
-@property (nonatomic, copy, readonly) NSString *stream;             // 流名
+/// 频道号
+@property (nonatomic, copy, readonly) NSNumber *channelId;
+/// 推流地址
+@property (nonatomic, copy, readonly) NSString *rtmpUrl;
+/// 流名
+@property (nonatomic, copy, readonly) NSString *stream;
 
-@property (nonatomic, copy, readonly) NSString *userId;             // 用户Id
-@property (nonatomic, copy, readonly) NSString *nickName;           // 用户昵称
-@property (nonatomic, copy, readonly) NSString *role;               // 用户角色
-@property (nonatomic, copy, readonly) NSString *avatar;             // 用户头像地址
+/// 用户Id
+@property (nonatomic, copy, readonly) NSString *userId;
+/// 用户昵称
+@property (nonatomic, copy, readonly) NSString *nickName;
+/// 用户角色
+@property (nonatomic, copy, readonly) NSString *role;
+/// 用户头像地址
+@property (nonatomic, copy, readonly) NSString *avatar;
 
-@property (nonatomic, readonly) BOOL isNgbEnabled;                  // NGB 是否开启
-@property (nonatomic, readonly) BOOL isUrlProtected;                // 防盗链是否开
-@property (nonatomic, copy, readonly) NSString *url;                // rtmp URL
-@property (nonatomic, copy, readonly) NSString *ngbUrl;             // NGB URL
-@property (nonatomic, copy, readonly) NSString *bakUrl;             // bakUrl URL
+/// NGB 是否开启
+@property (nonatomic, readonly) BOOL isNgbEnabled;
+/// 防盗链是否开
+@property (nonatomic, readonly) BOOL isUrlProtected;
+/// rtmp URL
+@property (nonatomic, copy, readonly) NSString *url;
+/// NGB URL
+@property (nonatomic, copy, readonly) NSString *ngbUrl;
+/// bakUrl URL
+@property (nonatomic, copy, readonly) NSString *bakUrl;
 
-@property (nonatomic, copy, readonly) NSDictionary *channelDict;    // 推流频道信息
+/// 推流频道信息
+@property (nonatomic, copy, readonly) NSDictionary *channelDict;
 
 /**
  便利初始化方法

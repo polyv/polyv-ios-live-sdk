@@ -6,8 +6,6 @@
 //  Copyright © 2017 easefun. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 //! Project version number for PLVLiveSDK.
 FOUNDATION_EXPORT double PLVLiveSDKVersionNumber;
 
