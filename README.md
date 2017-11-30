@@ -1,11 +1,9 @@
 # polyv-ios-live-sdk
 
 
-
 ## 概述
 
 本仓库包含 Polyv 直播 SDK、pod 项目 demo 及 cocoaPods 项目配置说明等文件。
-
 
 
 ## 快速开始
@@ -16,29 +14,28 @@
 
 ```
 ├── Frameworks
-		├── PLVLiveSDK.framework 	# 直播 SDK
-├── LiveSDK-iOS.xcodeproj  			# Demo 演示
-├── Podfile          				# 直播 SDK 依赖库
+	├── PLVLiveSDK.framework 	# 直播 SDK
+├── LiveSDK-iOS.xcodeproj  		# Demo 演示
+├── Podfile          			# 直播 SDK 依赖库
 ├── PolyvLiveSDK.podspec        	# SDK 的 CocoaPods 仓库说明
 ```
 
 - SDK 文件结构（PLVLiveSDK.framework）
 
 ```
-├── PLVLiveConfig 					#  直播 SDK 配置文件
+├── PLVLiveConfig 			# 直播 SDK 配置文件
 ├── PLVLive
-       ├── PLVLiveAPI 				# 直播相关接口
-       ├── PLVLiveChannel  			# 直播观看频道信息
-       ├── PLVPushChannel 			# 推流频道信息
+       ├── PLVLiveAPI 			# 直播相关接口
+       ├── PLVLiveChannel  		# 直播观看频道信息
+       ├── PLVPushChannel 		# 推流频道信息
        └── PLVLiveReporter   		# 直播服务质量统计
 └── PLVSocket
        ├── PLVSocketIOEventDef		# SocketIO 事件文档(字典，事件参数键)
-       ├── PLVSocketIO   			# SocketIO 对象
-       ├── PLVSocketObject 			# SocketObject 对象的基类
+       ├── PLVSocketIO   		# SocketIO 对象
+       ├── PLVSocketObject 		# SocketObject 对象的基类
        ├── PLVSocketChatRoomObject	# 聊天室消息对象
        └── PLVSocketLinkMicObject 	# 连麦消息对象
 ```
-
 
 
 ### 集成与配置
@@ -61,7 +58,6 @@ end
 *执行 `pod install` 成功后会下载 PolyvLiveSDK 及依赖库 Socket.IO-Client-Swift 和 Starscream*
 
 
-
 备注：第三方依赖库 Starscream 部分版本未配置 Swift 版本说明，可能在编译时报错。需要手动设置 Starscream Target 的 Swift Language Version，操作如下
 
 ```
@@ -69,7 +65,6 @@ end
 ```
 
 未安装或未使用过 Cocopods 同学可参考[官方文档说明](http://guides.cocoapods.org/using/using-cocoapods.html)。
-
 
 
 #### 手动集成
@@ -83,9 +78,7 @@ end
   - 编译、运行成功 PLVSocektIO 初始化接口即可
 
 
-
-当前版本：[SocketIO v12.1.3]() 和 [Starscream v2.1.1]()
-
+当前版本：[SocketIO v12.1.3](http://repo.polyv.net/ios/livesdk/socket.io/12.1.3/SocketIO.framework.zip) 和 [Starscream v2.1.1](http://repo.polyv.net/ios/livesdk/starscream/2.1.1/Starscream.framework.zip)
 
 
 ## Example
@@ -181,14 +174,12 @@ SocketIO 控制
 ```
 
 
-
 ## DOCS
 
 当前版本：v3.0.0
 
 - [PLVLiveConfig](http://repo.polyv.net/ios/livesdk/docs/3.0.0/Classes/PLVLiveConfig.html)
 
-  ​
 
 - [PLVLiveAPI](http://repo.polyv.net/ios/livesdk/docs/3.0.0/Classes/PLVLiveAPI.html)
 
@@ -198,16 +189,12 @@ SocketIO 控制
 
 - [PLVLiveReporter](http://repo.polyv.net/ios/livesdk/docs/3.0.0/Classes/PLVLiveReporter.html)
 
-  ​
-
-
 
 - [PLVSocketIOEventDef](https://github.com/polyv/polyv-ios-live-sdk/blob/master/Frameworks/PLVLiveSDK.framework/Headers/PLVSocketIOEventDef.h)
 - [PLVSocketIO](http://repo.polyv.net/ios/livesdk/docs/3.0.0/Classes/PLVSocketIO.html)
 - [PLVSocketObject](http://repo.polyv.net/ios/livesdk/docs/3.0.0/Classes/PLVSocketObject.html)
 - [PLVSocketChatRoomObject](http://repo.polyv.net/ios/livesdk/docs/3.0.0/Classes/PLVSocketChatRoomObject.html)
 - [PLVSocketLinkMicObject](http://repo.polyv.net/ios/livesdk/docs/3.0.0/Classes/PLVSocketLinkMicObject.html)
-
 
 
 历史版本
