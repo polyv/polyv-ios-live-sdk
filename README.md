@@ -78,7 +78,7 @@ end
   - 编译、运行成功 PLVSocektIO 初始化接口即可
 
 
-当前版本：[SocketIO v12.1.3](http://repo.polyv.net/ios/livesdk/socket.io/12.1.3/SocketIO.framework.zip) 和 [Starscream v2.1.1](http://repo.polyv.net/ios/livesdk/starscream/2.1.1/Starscream.framework.zip)
+当前版本：[PolyvLiveSDK](http://repo.polyv.net/ios/download/livesdk/3.0.0/PLVLiveSDK.framework.zip)、[SocketIO v12.1.3](http://repo.polyv.net/ios/download/socket.io/12.1.3/SocketIO.framework.zip) 和 [Starscream v2.1.1](http://repo.polyv.net/ios/download/starscream/2.1.1/Starscream.framework.zip)
 
 
 ## Example
@@ -178,25 +178,25 @@ SocketIO 控制
 
 当前版本：v3.0.0
 
-- [PLVLiveConfig](http://repo.polyv.net/ios/livesdk/docs/3.0.0/Classes/PLVLiveConfig.html)
+- [PLVLiveConfig](http://repo.polyv.net/ios/documents/livesdk/3.0.0/Classes/PLVLiveConfig.html)
 
 
-- [PLVLiveAPI](http://repo.polyv.net/ios/livesdk/docs/3.0.0/Classes/PLVLiveAPI.html)
+- [PLVLiveAPI](http://repo.polyv.net/ios/documents/livesdk/3.0.0/Classes/PLVLiveAPI.html)
 
-- [PLVLiveChannel](http://repo.polyv.net/ios/livesdk/docs/3.0.0/Classes/PLVLiveChannel.html)
+- [PLVLiveChannel](http://repo.polyv.net/ios/documents/livesdk/3.0.0/Classes/PLVLiveChannel.html)
 
-- [PLVPushChannel](http://repo.polyv.net/ios/livesdk/docs/3.0.0/Classes/PLVPushChannel.html)
+- [PLVPushChannel](http://repo.polyv.net/ios/documents/livesdk/3.0.0/Classes/PLVPushChannel.html)
 
-- [PLVLiveReporter](http://repo.polyv.net/ios/livesdk/docs/3.0.0/Classes/PLVLiveReporter.html)
+- [PLVLiveReporter](http://repo.polyv.net/ios/documents/livesdk/3.0.0/Classes/PLVLiveReporter.html)
 
 
 - [PLVSocketIOEventDef](https://github.com/polyv/polyv-ios-live-sdk/blob/master/Frameworks/PLVLiveSDK.framework/Headers/PLVSocketIOEventDef.h)
-- [PLVSocketIO](http://repo.polyv.net/ios/livesdk/docs/3.0.0/Classes/PLVSocketIO.html)
-- [PLVSocketObject](http://repo.polyv.net/ios/livesdk/docs/3.0.0/Classes/PLVSocketObject.html)
-- [PLVSocketChatRoomObject](http://repo.polyv.net/ios/livesdk/docs/3.0.0/Classes/PLVSocketChatRoomObject.html)
-- [PLVSocketLinkMicObject](http://repo.polyv.net/ios/livesdk/docs/3.0.0/Classes/PLVSocketLinkMicObject.html)
+- [PLVSocketIO](http://repo.polyv.net/ios/documents/livesdk/3.0.0/Classes/PLVSocketIO.html)
+- [PLVSocketObject](http://repo.polyv.net/ios/documents/livesdk/3.0.0/Classes/PLVSocketObject.html)
+- [PLVSocketChatRoomObject](http://repo.polyv.net/ios/documents/livesdk/3.0.0/Classes/PLVSocketChatRoomObject.html)
+- [PLVSocketLinkMicObject](http://repo.polyv.net/ios/documents/livesdk/3.0.0/Classes/PLVSocketLinkMicObject.html)
 
 
 历史版本
 
- [v3.0.0](http://repo.polyv.net/ios/livesdk/docs/3.0.0/index.html)
+ [v3.0.0](http://repo.polyv.net/ios/documents/livesdk/3.0.0/index.html)
